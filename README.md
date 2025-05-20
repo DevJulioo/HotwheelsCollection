@@ -1,16 +1,11 @@
 # CollectionHotwheels API - Backend
 
-A **CollectionHotwheels API** é uma aplicação backend construída com **Node.js**, **Express** e **MongoDB**, que fornece uma interface para gerenciamento de carros. Com ela, é possível realizar operações CRUD completas (Create, Read, Update, Delete).
+A **CollectionHotwheels API** é uma aplicação backend construída com **Java** e **MySqel**, que fornece uma interface para gerenciamento de carros. Com ela, é possível realizar operações CRUD completas (Create, Read, Update, Delete).
 
 ## 🧰 Tecnologias Utilizadas
 
-* **Node.js** – Plataforma JavaScript para o backend
-* **Express** – Framework web leve e flexível
-* **MongoDB** – Banco de dados NoSQL
-* **Mongoose** – ODM para modelar os dados do MongoDB
-* **dotenv** – Para gerenciar variáveis de ambiente
+* **Java** – Plataforma para o backend
 * **CORS** – Para permitir requisições cross-origin
-* **body-parser** – Para interpretar o corpo das requisições HTTP
 * **Swagger** – Para documentação interativa da API
 
 ---
