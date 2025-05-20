@@ -1,12 +1,15 @@
-# CollectionHotwheels API - Backend
+# 🚀 CollectionHotwheels API - Backend
 
-A **CollectionHotwheels API** é uma aplicação backend construída com **Java** e **MySqel**, que fornece uma interface para gerenciamento de carros. Com ela, é possível realizar operações CRUD completas (Create, Read, Update, Delete).
+A **CollectionHotwheels API** é uma aplicação backend construída com **Java** e **MySQL**, que fornece uma interface para gerenciamento de carros.  
+Com ela, é possível realizar operações CRUD completas: **Create**, **Read**, **Update** e **Delete**.
+
+---
 
 ## 🧰 Tecnologias Utilizadas
 
-* **Java** – Plataforma para o backend
-* **CORS** – Para permitir requisições cross-origin
-* **Swagger** – Para documentação interativa da API
+- **Java** – Plataforma para o backend  
+- **CORS** – Permite requisições cross-origin  
+- **Swagger** – Documentação interativa da API  
 
 ---
 
@@ -14,42 +17,58 @@ A **CollectionHotwheels API** é uma aplicação backend construída com **Java*
 
 A API permite:
 
-* Criar um ou vários carros
-* Listar todos os carros
-* Buscar um carro por ID
-* Atualizar dados de um carro
-* Deletar um carro por ID
-* Deletar todos os carros
-* Ver mensagem de boas-vindas
-* Documentação interativa via Swagger
+- Criar um ou vários carros  
+- Listar todos os carros  
+- Buscar um carro por ID  
+- Atualizar dados de um carro  
+- Deletar um carro por ID  
+- Deletar todos os carros  
+- Ver uma mensagem de boas-vindas  
+- Acessar a documentação interativa via Swagger  
 
 ---
 
-Endpoints
-[POST] https://localhost:8080/hotwheels/
-Cria um novo hotwheels.
+## 📄 Endpoints
+
+### 🔹 Criar um novo carro  
+**[POST]** `https://localhost:8080/hotwheels`  
+**Corpo da requisição:**
+```json
 {
   "nome": "Twin Mill",
   "modelo": "Modelo D",
   "ano": 2010,
   "imagem": "http://example.com/images/twinmill.jpg"
 }
+```
 
-[GET] https://localhost:8080/hotwheels/
-Retorna a lista de todos os hotwheels cadastrados.
+---
 
-[GET] https://localhost:8080/hotwheels/{id}
-Retorna um hotwheels específico com base no ID.
+### 🔹 Listar todos os carros  
+**[GET]** `https://localhost:8080/hotwheels`
 
-[PUT] https://localhost:8080/hotwheels/{id}
-Atualiza os dados de um hotwheels.
+---
+
+### 🔹 Buscar um carro por ID  
+**[GET]** `https://localhost:8080/hotwheels/{id}`
+
+---
+
+### 🔹 Atualizar os dados de um carro  
+**[PUT]** `https://localhost:8080/hotwheels/{id}`  
+**Corpo da requisição:**
+```json
 {
   "nome": "BMW X6",
   "modelo": "2021",
   "ano": 2021,
   "imagem": "http://example.com/images/bmw-x6-2021.jpg"
 }
-[DELETE] https://localhost:8080/hotwheels/{id}
-Remove um hotwheels específico pelo ID.
+```
 
+---
 
+### 🔹 Deletar um carro por ID  
+**[DELETE]** `https://localhost:8080/hotwheels/{id}`
+
+---
