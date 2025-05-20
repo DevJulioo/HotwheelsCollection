@@ -1,74 +1,61 @@
-# 🚀 CollectionHotwheels API - Backend
+# 🎨 CollectionHotwheels App - Frontend
 
-A **CollectionHotwheels API** é uma aplicação backend construída com **Java** e **MySQL**, que fornece uma interface para gerenciamento de carros.  
-Com ela, é possível realizar operações CRUD completas: **Create**, **Read**, **Update** e **Delete**.
+A **CollectionHotwheels App** é a interface mobile do sistema, desenvolvida com **React Native**.  
+Ela permite que usuários visualizem, cadastrem, editem e excluam carros da coleção HotWheels de forma intuitiva e interativa.
 
 ---
 
 ## 🧰 Tecnologias Utilizadas
 
-- **Java** – Plataforma para o backend  
-- **CORS** – Permite requisições cross-origin  
-- **Swagger** – Documentação interativa da API  
+- **React Native** – Base do desenvolvimento mobile
+- **Expo Image Picker** – Seleção de imagens a partir da galeria ou câmera
+- **Axios** – Comunicação com a API backend (HTTP client)
+- **React Navigation** – Gerenciamento de navegação entre telas
+- **Expo Linear Gradient** – Aplicação de gradientes visuais nas telas
+- **React Native UUID** – Geração de identificadores únicos para carros
+- **React Toastify Message** – Exibição de mensagens e feedbacks ao usuário
 
 ---
 
-## 🚗 Funcionalidades
+## 📱 Funcionalidades
 
-A API permite:
+O app permite:
 
-- Criar um ou vários carros  
-- Listar todos os carros  
-- Buscar um carro por ID  
-- Atualizar dados de um carro  
-- Deletar um carro por ID  
-- Deletar todos os carros  
-- Ver uma mensagem de boas-vindas  
-- Acessar a documentação interativa via Swagger  
-
----
-
-## 📄 Endpoints
-
-### 🔹 Criar um novo carro  
-**[POST]** `https://localhost:8080/hotwheels`  
-**Corpo da requisição:**
-```json
-{
-  "nome": "Twin Mill",
-  "modelo": "Modelo D",
-  "ano": 2010,
-  "imagem": "http://example.com/images/twinmill.jpg"
-}
-```
+- Visualizar todos os carros cadastrados
+- Visualizar detalhes de um carro
+- Cadastrar um novo carro com imagem
+- Editar os dados de um carro existente
+- Excluir um carro da coleção
+- Navegação fluida entre telas
+- Interface amigável e responsiva
 
 ---
 
-### 🔹 Listar todos os carros  
-**[GET]** `https://localhost:8080/hotwheels`
+## 🖼️ Telas
+
+## 🖼️ Telas
+
+1. **Tela Inicial (Home)**  
+   ![]()
+
+2. **Tela de Cadastro**  
+   ![]()
+
+3. **Tela de Edição**  
+   ![](./assets/tela_3.jpg)
+
+4. **Tela de Detalhes**  
+   ![](./assets/tela_4.jpg)
+
+5. **Tela de Confirmação de Exclusão**  
+   ![](./assets/tela_5.jpg)
+
+6. **Tela de Sucesso ou Feedback**  
+   ![](./assets/tela_6.jpg)
+
 
 ---
 
-### 🔹 Buscar um carro por ID  
-**[GET]** `https://localhost:8080/hotwheels/{id}`
+## 🔗 Integração com Backend
 
----
-
-### 🔹 Atualizar os dados de um carro  
-**[PUT]** `https://localhost:8080/hotwheels/{id}`  
-**Corpo da requisição:**
-```json
-{
-  "nome": "BMW X6",
-  "modelo": "2021",
-  "ano": 2021,
-  "imagem": "http://example.com/images/bmw-x6-2021.jpg"
-}
-```
-
----
-
-### 🔹 Deletar um carro por ID  
-**[DELETE]** `https://localhost:8080/hotwheels/{id}`
-
----
+Todos os dados do aplicativo são consumidos da API Java Spring Boot (`https://localhost:8080/hotwheels`) usando **Axios**.
